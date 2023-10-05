@@ -1,4 +1,4 @@
 name = "PlutoExamples"
-uuid = "a0d82066-4a5c-4630-8b7b-ef051b41451f"
-authors = ["Dale Black <djblack@uci.edu>"]
-version = "0.1.0"
+
+[deps]
+HTML = "c47fe496-5789-4377-b1db-55e89f2ee0c6"
