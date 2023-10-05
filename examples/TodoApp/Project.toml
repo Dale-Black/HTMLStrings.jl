@@ -1,0 +1,6 @@
+name = "TodoApp"
+
+[deps]
+HTML = "c47fe496-5789-4377-b1db-55e89f2ee0c6"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+Oxygen = "df9a0d86-3283-4920-82dc-4555fc0d1d8b"
