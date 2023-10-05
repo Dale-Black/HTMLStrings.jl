@@ -66,8 +66,10 @@ html_content = to_html_content(html_expr)
 ```
 
 """
-function to_html_content(expr)
+function to_html(expr)
     # Assume divv generates a string of HTML from expr (based on your DSL)
     html_string = divv(expr)  
     return HTMLContent(html_string)
 end
+
+export to_html
