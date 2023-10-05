@@ -15,8 +15,8 @@ HTML.jl is a Julia package for creating HTML content using a domain-specific lan
 ## Installation
 
 ```julia
-    using Pkg
-    Pkg.add("HTML")
+using Pkg
+Pkg.add("HTML")
 ```
 
 ## Usage
