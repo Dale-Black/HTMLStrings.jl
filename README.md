@@ -1,27 +1,27 @@
-# HTML
+# HTMLStrings
 
-[![Build Status](https://github.com/Dale-Black/HTML.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/Dale-Black/HTML.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![Build Status](https://github.com/Dale-Black/HTMLStrings.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/Dale-Black/HTMLStrings.jl/actions/workflows/CI.yml?query=branch%3Amain)
 
     
-HTML.jl is a Julia package for creating HTML content using a domain-specific language (DSL). It provides a set of functions and types that make it easy to generate HTML in a flexible and expressive manner.
+HTMLStrings.jl is a Julia package for creating HTML content using a domain-specific language (DSL). It provides a set of functions and types that make it easy to generate HTML in a flexible and expressive manner.
 
 ## Features
 
 - A comprehensive set of functions for generating HTML tags.
 - A custom type `HTMLContent` for representing HTML content.
 - Easy integration with Pluto.jl notebooks.
-- Example Todo App to demonstrate the power of HTML.jl in building interactive web applications.
+- Example Todo App to demonstrate the power of HTMLStrings.jl in building interactive web applications.
     
 ## Installation
 
 ```julia
 using Pkg
-Pkg.add("HTML")
+Pkg.add("HTMLStrings")
 ```
 
 ## Usage
 
-Here's a basic example of how to create and display HTML content using HTML.jl:
+Here's a basic example of how to create and display HTML content using HTMLStrings.jl:
 
 ```julia
 using HTML
@@ -31,7 +31,7 @@ content = divv(
         title("Hello, World!")
     ),
     body(
-        h1("Welcome to HTML.jl"),
+        h1(:class => "text-lg", "Welcome to HTML.jl"),
         p("Generate HTML content with ease using Julia.")
     )
 )
@@ -44,10 +44,10 @@ to_html(content)
 
 In the `examples` folder, you'll find a Todo App and a Pluto notebook demonstrating how to use HTML.jl. Here's how the Todo App looks:
 
-![Todo App GIF](https://github.com/Dale-Black/HTML.jl/blob/main/images/todo_app.gif)
+![Todo App GIF](https://github.com/Dale-Black/HTMLStrings.jl/blob/main/images/todo_app.gif)
 
 And here's the Pluto notebook in action:
 
-![Pluto Notebook GIF](https://github.com/Dale-Black/HTML.jl/blob/main/images/pluto_notebook.gif)
+![Pluto Notebook GIF](https://github.com/Dale-Black/HTMLStrings.jl/blob/main/images/pluto_notebook.gif)
 
 Explore the examples to learn more about the capabilities of HTML.jl and how you can use it to create dynamic and interactive web content with Julia.
