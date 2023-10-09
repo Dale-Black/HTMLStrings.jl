@@ -1,4 +1,4 @@
-using HTML
+using HTMLStrings
 using Test
 
 @testset "HTML Elements" begin
