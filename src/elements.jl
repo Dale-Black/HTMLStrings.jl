@@ -122,7 +122,7 @@ legend(args...) = tag("legend", args...)
 li(args...) = tag("li", args...)
 link(args...) = tag("link", args...)
 main(args...) = tag("main", args...)
-map(args...) = tag("map", args...)
+mapp(args...) = tag("map", args...)
 mark(args...) = tag("mark", args...)
 meta(args...) = tag("meta", args...)
 meter(args...) = tag("meter", args...)
@@ -162,7 +162,7 @@ textarea(args...) = tag("textarea", args...)
 tfoot(args...) = tag("tfoot", args...)
 th(args...) = tag("th", args...)
 thead(args...) = tag("thead", args...)
-time(args...) = tag("time", args...)
+timee(args...) = tag("time", args...)
 title(args...) = tag("title", args...)
 tr(args...) = tag("tr", args...)
 track(args...) = tag("track", args...)
@@ -176,8 +176,8 @@ export a, abbr, address, area, article, aside, audio, b, base, bdi, bdo, blockqu
        body, br, button, canvas, caption, cite, code, col, colgroup, data, datalist, dd,
        del, details, dfn, dialog, divv, dl, dt, em, embed, fieldset, figcaption, figure,
        footer, form, h1, h2, h3, h4, h5, h6, head, header, hr, html, i, iframe, img,
-       input, ins, kbd, label, legend, li, link, main, map, mark, meta, meter, nav,
+       input, ins, kbd, label, legend, li, link, main, mapp, mark, meta, meter, nav,
        noscript, object, ol, optgroup, option, output, p, param, picture, pre, progress,
        q, rp, rt, ruby, s, samp, script, section, select, small, source, span, strong,
-       style, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, title,
+       style, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, timee, title,
        tr, track, u, ul, var, video, wbr

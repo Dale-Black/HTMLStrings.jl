@@ -42,3 +42,5 @@ using Test
         test_nested_tags()
     end
 end
+
+include("Aqua.jl")
