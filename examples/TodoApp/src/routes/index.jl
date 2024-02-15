@@ -1,5 +1,4 @@
-using HTMLStrings: divv, head, meta, title, script, body, nav, h1, form, input, a, p
-include("components/navbar.jl")
+include("../components/navbar.jl")
 
 export index
 function index()
@@ -15,12 +14,16 @@ function index()
                 :crossorigin => "anonymous"
             )
         ),
-        body(:class => "bg-black",
+        body(:id => body, :class => "bg-black",
             navbar("/todo", "To-Do List"),
-            divv(:class => "mx-auto text-center py-10 w-1/2 text-white",
+            divv(:id => "main", :class => "mx-auto text-center py-10 w-1/2 text-white",
                 h1(:class => "text-4xl font-bold mb-4", "Hello, Welcome to the To-Do App!"),
                 p(:class => "text-lg", "Click the button above to start managing your tasks.")
             )
-        ),
+        )
     )
+end
+
+@get "/" function ()
+    return index()
 end
