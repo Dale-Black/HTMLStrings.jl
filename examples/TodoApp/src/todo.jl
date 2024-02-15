@@ -3,7 +3,6 @@ using HTTP
 using HTMLStrings: divv, head, meta, title, link, script, body, nav, h1, form, input, button, a, p
 include("components/navbar.jl")
 
-export todo
 function todo()
     tasks = Vector{String}()
 
@@ -41,23 +40,23 @@ function todo()
             meta(:charset => "UTF-8"),
             meta(:name => "viewport", :content => "width=device-width, initial-scale=1.0"),
             title("To-Do App Home"),
-            link(:href => "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css", :rel => "stylesheet"),
-            link(:href => "https://cdn.jsdelivr.net/npm/daisyui/dist/full.css", :rel => "stylesheet")
+            script(:src => "https://cdn.jsdelivr.net/npm/@unocss/runtime"),
+            script(
+                :src => "https://unpkg.com/htmx.org@1.9.10",
+                :integrity => "sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC",
+                :crossorigin => "anonymous"
+            )
         ),
-        body(:class => "bg-neutral-100",
+        body(:class => "bg-black",
             navbar("/", "Home"),
-            divv(:class => "container mx-auto text-center py-10 w-1/2",
+            divv(:class => "mx-auto text-center py-10 w-1/2 text-white",
                 h1(:class => "text-4xl font-bold mb-4", "To-Do List"),
                 form(:hx_post => "/todo/todos", :hx_target => "#task-list", :class => "mb-4 flex justify-center",
-                    input(:type => "text", :name => "task", :id => "task-input", :placeholder => "Enter a task", :class => "border p-2 rounded flex-grow"),
-                    button(:type => "submit", :class => "btn btn-primary w-1/4 ml-2", "Add Task")
+                    input(:type => "text", :name => "task", :id => "task-input", :placeholder => "Enter a task", :class => "border-none p-2 rounded flex-grow"),
+                    button(:type => "submit", :class => "w-1/4 ml-2 bg-white text-black-foreground border-none hover:bg-white/90 rounded", "Add Task")
                 ),
-                divv(:id => "task-list", :class => "space-y-2 card min-h-screen")
+                divv(:id => "task-list", :class => "space-y-2 min-h-40")
             )
         )
     )
-end
-
-@get "/todo" function ()
-    return todo()
 end

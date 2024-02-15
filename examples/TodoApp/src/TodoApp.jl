@@ -8,4 +8,12 @@ using HTMLStrings: divv, head, meta, title, link, script, body, nav, h1, form, i
 include("index.jl")
 include("todo.jl")
 
+@get "/" function ()
+    return index()
+end
+
+@get "/todo" function ()
+    return todo()
+end
+
 end # module
