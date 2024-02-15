@@ -1,11 +1,9 @@
 # TodoApp
 
-Example Interactive App using just Oxygen.jl and HTML.jl (with HTMX)
+Example Interactive App using just Oxygen.jl and HTMLStrings.jl (with HTMX)
 
 ## Usage
-```julia
-using Pkg
-Pkg.activate("TodoApp")
-
-include("TodoApp/app.jl")
+```bash
+cd <path to TodoApp>
+julia server.jl
 ```
