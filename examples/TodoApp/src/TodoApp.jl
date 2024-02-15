@@ -3,8 +3,7 @@ module TodoApp
 import Base: get
 import Oxygen; Oxygen.@oxidise
 import Oxygen: @get, @post, @delete
-
-using HTTP
+import HTTP
 using HTMLStrings
 
 include("routes/index.jl")

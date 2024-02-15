@@ -1,4 +1,5 @@
 export navbar
+
 function navbar(path::String, pathname::String)
     return nav(:class => "bg-gray-transparent py-4",
         divv(:class => "container mx-auto text-white flex justify-between items-center",

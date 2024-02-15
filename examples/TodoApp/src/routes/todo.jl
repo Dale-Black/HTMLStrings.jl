@@ -1,5 +1,7 @@
 include("../components/navbar.jl")
 
+export todo
+
 tasks = Vector{String}()
 
 function render_tasks(tasks)
@@ -34,7 +36,6 @@ end
     return render_tasks(tasks)
 end
 
-export todo
 function todo()
     divv(:class => "mx-auto text-center py-10 w-1/2 text-white",
         h1(:class => "text-4xl font-bold mb-4", "To-Do List"),
@@ -46,6 +47,6 @@ function todo()
     )
 end
 
-@get "/todo" function ()
-    return todo()
-end
+# @get "/todo" function ()
+#     return todo()
+# end
