@@ -40,8 +40,18 @@ function todo()
     divv(:class => "mx-auto text-center py-10 w-1/2 text-white",
         h1(:class => "text-4xl font-bold mb-4", "To-Do List"),
         form(:hx_post => "/todo/todos", :hx_target => "#task-list", :class => "mb-4 flex justify-center",
-            input(:type => "text", :name => "task", :id => "task-input", :placeholder => "Enter a task", :class => "border-none p-2 rounded flex-grow"),
-            button(:type => "submit", :class => "w-1/4 ml-2 bg-white text-black-foreground border-none hover:bg-white/90 rounded", "Add Task")
+            input(
+                :type => "text",
+                :name => "task",
+                :id => "task-input",
+                :placeholder => "Enter a task",
+                :class => "border-none p-2 rounded flex-grow"
+            ),
+            button(
+                :type => "submit",
+                :class => "w-1/4 ml-2 bg-white text-black-foreground border-none hover:bg-white/90 rounded",
+                "Add Task"
+            )
         ),
         divv(:id => "task-list", :class => "space-y-2 min-h-40")
     )
