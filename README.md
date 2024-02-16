@@ -27,18 +27,23 @@ Here's a basic example of how to create and display HTML content using HTMLStrin
 ```julia
 using HTMLStrings
 
-content = divv(
-    head(
-        title("Hello, World!")
-    ),
-    body(
-        h1(:class => "text-lg", "Welcome to HTML.jl"),
-        p("Generate HTML content with ease using Julia.")
+function index()
+    return divv(
+        head(
+            title("Hello, World!")
+        ),
+        body(
+            h1(:class => "text-lg", "Welcome to HTML.jl"),
+            p("Generate HTML content with ease using Julia.")
+        )
     )
-)
+end
+
+# To return normal HTML string
+index()
 
 # To display in a Pluto.jl notebook
-to_html(content)
+to_html(index())
 ```
 
 ## Examples
