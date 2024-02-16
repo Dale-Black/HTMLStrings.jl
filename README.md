@@ -40,10 +40,10 @@ function index(text::String)
 end
 
 # To return normal HTML string
-index(World)
+index("World")
 
 # To display in a Pluto.jl notebook
-to_html(index(World))
+to_html(index("World"))
 ```
 
 ## Examples
