@@ -1,4 +1,4 @@
-using HTMLStrings
+export index
 
 function index()
     return divv(
@@ -10,10 +10,4 @@ function index()
             p("This is a static example.")
         )
     )
-end
-
-index_html = touch(joinpath(mkpath(joinpath(@__DIR__, "build")), "index.html"))
-
-open(index_html, "w") do io
-    write(io, index())
 end

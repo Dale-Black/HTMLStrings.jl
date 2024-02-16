@@ -1,2 +1,5 @@
+name = "HTMLStringsDocs"
+uuid = "a2875f4e-5319-4aab-a672-91848736cfc3"
+
 [deps]
 HTMLStrings = "c47fe496-5789-4377-b1db-55e89f2ee0c6"
