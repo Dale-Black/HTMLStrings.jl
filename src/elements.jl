@@ -19,7 +19,7 @@ println(tag("p", :class => "text-lg", "This is a paragraph."))
 ### Nested Tags
 ```julia
 # Generate a <div> with nested <p> and <span> tags
-println(tag("div", tag("p", "A paragraph."), tag("span", "A span.")))  
+println(tag("divv", tag("p", "A paragraph."), tag("span", "A span.")))  
 # Output: "<div><p>A paragraph.</p><span>A span.</span></div>"
 ```
 
