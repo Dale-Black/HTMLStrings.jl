@@ -1,6 +1,7 @@
 # HTMLStrings
 
 [![Build Status](https://github.com/Dale-Black/HTMLStrings.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/Dale-Black/HTMLStrings.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://dale-black.github.io/HTMLStrings.jl/)
 
     
 HTMLStrings.jl is a Julia package for creating HTML content using a domain-specific language that takes advantage of Julia syntax while still matching HTML in look and feel. It provides a set of functions and types that make it easy to generate HTML in a flexible and expressive manner.
