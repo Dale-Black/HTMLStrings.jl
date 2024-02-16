@@ -3,7 +3,7 @@
 [![Build Status](https://github.com/Dale-Black/HTMLStrings.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/Dale-Black/HTMLStrings.jl/actions/workflows/CI.yml?query=branch%3Amain)
 
     
-HTMLStrings.jl is a Julia package for creating HTML content using a domain-specific language that uses takes advantage of Julia syntax while still matching HTML in look and feel. It provides a set of functions and types that make it easy to generate HTML in a flexible and expressive manner.
+HTMLStrings.jl is a Julia package for creating HTML content using a domain-specific language that takes advantage of Julia syntax while still matching HTML in look and feel. It provides a set of functions and types that make it easy to generate HTML in a flexible and expressive manner.
 
 ## Features
 
@@ -42,7 +42,7 @@ to_html(content)
 
 ## Examples
 
-In the `examples` folder, you'll find a Todo App and a Pluto notebook demonstrating how to use HTML.jl. Here's how the Todo App looks:
+In the `examples` folder, you'll find a Todo App and a Pluto notebook demonstrating how to use HTMLStrings.jl. Here's how the Todo App looks:
 
 ![Todo App GIF](https://github.com/Dale-Black/HTMLStrings.jl/blob/main/images/todo_app.gif)
 
