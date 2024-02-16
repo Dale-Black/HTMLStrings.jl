@@ -18,7 +18,7 @@ function index()
         body(:id => body, :class => "bg-black",
             navbar("/todo", "To-Do List"),
             divv(:id => "main", :class => "mx-auto text-center py-10 w-1/2 text-white",
-                h1(:class => "text-4xl font-bold mb-4", "Hello, HMR!! woo Welcome to the To-Do App!"),
+                h1(:class => "text-4xl font-bold mb-4", "Hello Welcome to the To-Do App!"),
                 p(:class => "text-lg", "Click the button above to start managing your tasks.")
             )
         )

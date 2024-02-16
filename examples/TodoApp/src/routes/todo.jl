@@ -57,6 +57,6 @@ function todo()
     )
 end
 
-# @get "/todo" function ()
-#     return todo()
-# end
+@get "/todo" function ()
+    return todo()
+end
