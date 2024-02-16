@@ -27,10 +27,10 @@ Here's a basic example of how to create and display HTML content using HTMLStrin
 ```julia
 using HTMLStrings
 
-function index()
+function index(text::String)
     return divv(
         head(
-            title("Hello, World!")
+            title("Hello, $text!")
         ),
         body(
             h1(:class => "text-lg", "Welcome to HTML.jl"),
@@ -40,10 +40,10 @@ function index()
 end
 
 # To return normal HTML string
-index()
+index(World)
 
 # To display in a Pluto.jl notebook
-to_html(index())
+to_html(index(World))
 ```
 
 ## Examples
