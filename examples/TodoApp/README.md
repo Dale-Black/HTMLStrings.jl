@@ -1,6 +1,6 @@
 # TodoApp
 
-Example Interactive App using just Oxygen.jl and HTMLStrings.jl (with HTMX)
+Example Interactive App using just Oxygen.jl and HTMLStrings.jl (with HTMX & UnoCSS)
 
 ## Usage
 ```bash
