@@ -1,8 +1,7 @@
 module TodoApp
 
-import Base: get
-import Oxygen; Oxygen.@oxidise
 import Oxygen: @get, @post, @delete
+Oxygen.@oxidise
 import HTTP
 using HTMLStrings
 
